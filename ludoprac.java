@@ -11,8 +11,7 @@ public class ludoprac {
 		int actual_dice_roll_comparison_vlaue[] = { 1, 2, 3, 4, 5, 6 };
 		int player_1 = 0;
 		int player_2 = 0;
-		int player_one = 0;
-		int player_two = 0;
+		
 
 		while (!(player_1 == 90) && !(player_2 == 90)) {
 			int dice_p1 = dice_roller.nextInt(max_dice_value);
@@ -31,7 +30,7 @@ public class ludoprac {
 				if (player_1 > 90) {
 					player_1 = player_1 - conditon_for_90_p1;
 				}
-				player_one++;
+				
 			}
 			if (player_2 < 90) {
 				int conditon_for_90_p2 = 0;
@@ -48,17 +47,17 @@ public class ludoprac {
 				if (player_2 > 90) {
 					player_2 = player_2 - conditon_for_90_p2;
 				}
-				player_two++;
+				
 			}
 
 		}
 
 		if (player_1 > player_2) {
 			System.out.println("player 1 wins" + player_1);
-			System.out.println("it took player 1" + (player_one - 1) + "dice rolls");
+			
 		} else {
 			System.out.println("player 2 wins" + player_2);
-			System.out.println("it took player 2" + (player_two - 1) + "dice rolls");
+			
 		}
 
 	}
